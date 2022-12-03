@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="3.1" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd">
+    <servlet>
+        <servlet-name>ControllerImagenes</servlet-name>
+        <servlet-class>Controllers.ControllerImagenes</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>ControllerInventario</servlet-name>
+        <servlet-class>Controllers.ControllerInventario</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>ControllerEmail</servlet-name>
+        <servlet-class>Controllers.ControllerEmail</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ControllerImagenes</servlet-name>
+        <url-pattern>/ControllerImagenes</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>ControllerInventario</servlet-name>
+        <url-pattern>/ControllerInventario</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>ControllerEmail</servlet-name>
+        <url-pattern>/ControllerEmail</url-pattern>
+    </servlet-mapping>
+    <session-config>
+        <session-timeout>
+            30
+        </session-timeout>
+    </session-config>
+</web-app>
